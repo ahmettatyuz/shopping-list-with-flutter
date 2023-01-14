@@ -106,7 +106,7 @@ class _UurnEkleState extends State<UrunEkle> {
                   print(urunAdi);
                   print(urunAdeti);
                   String url =
-                      "https://www.gonderiyoo.com/api/addUrun.php?urunAd=$urunAdi&adet=$urunAdeti&kategoriId=$dropdownValue&tane_fiyat=$urunFiyat";
+                      "http://localhost/";
                   print(url);
                   setState(() {
                     Dio().get(

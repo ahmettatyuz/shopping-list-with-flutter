@@ -40,7 +40,7 @@ class _OncekiAlisverisState extends State<OncekiAlisveris> {
   Future<List<Alisveris>> tamamlananlar() async {
     try {
       var response = await Dio()
-          .get("https://www.gonderiyoo.com/api/getList.php?filter=1");
+          .get("http://localhost/");
       print(response.statusCode);
       print("1");
       List<Alisveris> _tamamlananlar = [];

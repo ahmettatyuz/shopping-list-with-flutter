@@ -40,7 +40,7 @@ class _AnalizEkranState extends State<AnalizEkran> {
   Future<List<Analiz>> _getEnCokHarcama() async {
     try {
       var response = await Dio()
-          .get("https://www.gonderiyoo.com/api/getUrunAnaliz.php?type=0");
+          .get("http://localhost/");
       print(response.statusCode);
       print("1");
       List<Analiz> _AnalizListesi = [];

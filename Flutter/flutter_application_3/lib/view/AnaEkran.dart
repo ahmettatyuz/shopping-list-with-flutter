@@ -29,7 +29,7 @@ class _AnaEkranState extends State<AnaEkran> {
   Future<List<Alisveris>> _getAlisverisList() async {
     try {
       var response = await Dio()
-          .get("https://www.gonderiyoo.com/api/getList.php?filter=0");
+          .get("http://localhost/");
       List<Alisveris> _alisverisListesi = [];
       if (response.statusCode == 200) {
         _alisverisListesi =
