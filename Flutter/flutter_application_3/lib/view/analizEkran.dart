@@ -60,7 +60,7 @@ class _AnalizEkranState extends State<AnalizEkran> {
   Future<List<Analiz>> _getEnCokSatinAlinan() async {
     try {
       var response = await Dio()
-          .get("https://www.gonderiyoo.com/api/getUrunAnaliz.php?type=1");
+          .get("http://localhost/");
       print(response.statusCode);
       print("1");
       List<Analiz> _AnalizListesi = [];
@@ -80,7 +80,7 @@ class _AnalizEkranState extends State<AnalizEkran> {
   Future<List<AnalizKategori>> _getEnCokKategori() async {
     try {
       var response = await Dio()
-          .get("https://www.gonderiyoo.com/api/getUrunAnaliz.php?type=2");
+          .get("http://localhost/");
       print(response.statusCode);
       print("1");
       List<AnalizKategori> _AnalizListesi = [];
