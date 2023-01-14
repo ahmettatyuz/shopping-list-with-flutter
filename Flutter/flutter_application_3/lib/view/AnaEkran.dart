@@ -105,7 +105,7 @@ class _AnaEkranState extends State<AnaEkran> {
                       color: Colors.white,
                       onPressed: () async {
                         var response = await Dio().get(
-                            "https://www.gonderiyoo.com/api/setAlindi.php?urun_id=${alisveris.id}");
+                            "http://localhost/");
                         setState(() {});
                       },
                       icon: Icon(Icons.check),
